@@ -13,3 +13,14 @@ body{
     padding: 10px;
     border: 1px solid #673ab799;
 }
+
+.item:nth-of-type(4){
+    background: blue;
+    overflow: auto;
+    display: grid;
+    grid-template: 50px 50px 50px/ 200px 200px 200px;
+}
+
+.item .item {
+    background: limegreen;
+}
