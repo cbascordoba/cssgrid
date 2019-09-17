@@ -7,11 +7,12 @@ body{
     /* grid-template: 300px 100px 100px/ auto auto auto;  Distribuye el espaciado de mi columna de acuerdo con el contenido */
     /* grid-template: 300px 100px 100px/ repeat(4, 1fr); */
     /* grid-template: 300px 100px 100px/ repeat(4, minmax(200px, 1fr)); */
-    grid-template: 300px 100px 100px/ minmax(200px, 1fr) 1fr 1fr 1fr;
+    grid-template: 100px 1fr 150px/ 200px 1fr;
 
 
-    
-    grid-gap: 10px 100px;
+    height: 100vh;
+    grid-gap: 10px;
+    grid-template-areas: "header header" "left contenido" "footer footer";
 }
 
 .item{
@@ -29,4 +30,20 @@ body{
 
 .item .item {
     background: limegreen;
+}
+
+.header{
+    grid-area: header;
+}
+
+.left{
+    grid-area: left;
+}
+
+.contenido{
+    grid-area: contenido;
+}
+
+.footer{
+    grid-area: footer;
 }
